@@ -1,14 +1,14 @@
-#Fri Apr 24 16:14:43 IST 2020
+#Sat Apr 25 14:39:01 IST 2020
 bluej.teamsettings.groupname=
 bluej.teamsettings.git.repositoryPrefix=/shreyam28/Shreyam_programs2
 bluej.teamsettings.git.protocol=https
 bluej.teamsettings.user=Shreyam028
 bluej.teamsettings.git.server=github.com
 bluej.teamsettings.yourEmail=shreyamraj028@gmail.com
-bluej.teamsettings.ignore8=\\.DS_Store
 bluej.teamsettings.vcs=git
+bluej.teamsettings.ignore8=\\.DS_Store
 bluej.teamsettings.ignore7=.*\\\#backup
-bluej.teamsettings.yourName=Shreyam Raj
+bluej.teamsettings.yourName=shreyam28
 bluej.teamsettings.ignore6=.*\\\#
 bluej.teamsettings.ignore5=.*\\~
 bluej.teamsettings.ignore4=.*\\.ctxt
