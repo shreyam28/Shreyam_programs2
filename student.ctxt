@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=student
+comment1.params=a
+comment1.target=void\ name(java.lang.String)
+comment2.params=n
+comment2.target=void\ roll_no(int)
+comment3.params=b\ c\ d\ e\ f
+comment3.target=void\ marks(double,\ double,\ double,\ double,\ double)
+comment4.params=
+comment4.target=void\ main()
+numComments=5
