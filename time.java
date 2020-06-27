@@ -1,28 +1,30 @@
-class time
+class Time
 {
-    int hr,min,sec,ans;
-    void accept(int hr2,int min2,int sec2)
+    int hrs,mins;
+    void input(int h,int m)
     {
-        hr=hr2;
-        min=min2;
-        sec=sec2;
+        hrs=h;
+        mins=m;
     }
-    void convert()
+    void addtime(Time obj1,Time obj2)
     {
-         ans=(3600*hr)+(60*min)+sec;
+        int totalmins=obj1.hrs*60+obj1.mins+obj2.hrs+obj2.mins;
+        hrs=totalmins/60;
+        mins=totalmins%60;
     }
-    void showResult()
+    void disp()
     {
-         System.out.println(ans);
-        }
-        public static void main()
-        {
-            time obj=new time();
-            obj.accept(2,30,45);
-            obj.convert();
-            obj.showResult();
-        }
+        System.out.println("Total time="+hrs+"hrs"+mins+"mins");
     }
-        
-        
+    public static void main()
+    {
+        Time t1=new Time();
+        Time t2=new Time();
+        Time t3=new Time();
+        t1.input(2,50);//non-interactive input
+        t2.input(3,50);//non-interactive input
+        t3.addtime(t1,t2);
+        t3.disp();
+    }
+}
         
