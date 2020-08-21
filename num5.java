@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class num2
+class num5
 {
     int num;
     void read()
@@ -11,19 +11,19 @@ class num2
     void digit()
     {
         int n=num;
-        
-        int count=0;
+        int digit=-1;
+        int sum=0;
         while(n!=0)
         {
-            
-            count=count+1;
+            digit=n%10;
+            sum=sum+(digit*digit);
             n=n/10;
         }
-        System.out.println("The count of digits of num="+count);
+        System.out.println("The square of sum of digits of num="+sum);
     }
     public static void main()
     {
-        num2 obj=new num2();
+        num5 obj=new num5();
         obj.read();
         obj.digit();
     }

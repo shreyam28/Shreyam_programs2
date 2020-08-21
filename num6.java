@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class num2
+class num6
 {
     int num;
     void read()
@@ -12,18 +12,18 @@ class num2
     {
         int n=num;
         
-        int count=0;
+        int rev=0;
         while(n!=0)
         {
-            
-            count=count+1;
+            rev=rev*10;
+            rev=rev+(n%10);
             n=n/10;
         }
-        System.out.println("The count of digits of num="+count);
+        System.out.println("The reverse of num="+rev);
     }
     public static void main()
     {
-        num2 obj=new num2();
+        num6 obj=new num6();
         obj.read();
         obj.digit();
     }

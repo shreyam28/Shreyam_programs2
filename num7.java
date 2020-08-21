@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class num2
+class num7
 {
     int num;
     void read()
@@ -8,24 +8,25 @@ class num2
         System.out.println("Enter the number:");
         num=sc.nextInt();
     }
-    void digit()
+    void compute()
     {
         int n=num;
-        
-        int count=0;
+        int digit=0;
+        int sum=n%10;
         while(n!=0)
         {
+            digit=n%10;
             
-            count=count+1;
             n=n/10;
         }
-        System.out.println("The count of digits of num="+count);
+        sum=sum+digit;
+        System.out.println("The sum of first and last digits of num="+sum);
     }
     public static void main()
     {
-        num2 obj=new num2();
+        num7 obj=new num7();
         obj.read();
-        obj.digit();
+        obj.compute();
     }
 }
           

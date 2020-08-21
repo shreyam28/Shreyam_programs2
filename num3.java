@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class num2
+class num3
 {
     int num;
     void read()
@@ -11,19 +11,19 @@ class num2
     void digit()
     {
         int n=num;
-        
-        int count=0;
+        int digit=-1;
+        int prod=1;
         while(n!=0)
         {
-            
-            count=count+1;
+            digit=n%10;
+            prod=prod*digit;
             n=n/10;
         }
-        System.out.println("The count of digits of num="+count);
+        System.out.println("The product of digits of num="+prod);
     }
     public static void main()
     {
-        num2 obj=new num2();
+        num3 obj=new num3();
         obj.read();
         obj.digit();
     }

@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class num2
+class num8
 {
     int num;
     void read()
@@ -11,19 +11,25 @@ class num2
     void digit()
     {
         int n=num;
-        
-        int count=0;
+        int digit=-1;
+        int min=n%10;
+        int max=n%10;
         while(n!=0)
         {
+            digit=n%10;
+            if(digit>max)
+            max=digit;
+            if(digit<min)
+            min=digit;
             
-            count=count+1;
             n=n/10;
         }
-        System.out.println("The count of digits of num="+count);
+        System.out.println("The largest digit="+max);
+        System.out.println("The smallest digit="+min);
     }
     public static void main()
     {
-        num2 obj=new num2();
+        num8 obj=new num8();
         obj.read();
         obj.digit();
     }
